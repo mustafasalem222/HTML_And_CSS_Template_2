@@ -7,8 +7,34 @@
   padding: 0;
 }
 
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 16px;
+
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+  background: #414040;
+}
+
+/* Handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans", serif;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -1242,8 +1268,7 @@ a.more:hover {
   z-index: 2;
   position: relative;
 }
-.footer .footer-container img {
-}
+
 .footer .footer-container h2 {
   color: #fff;
   margin: 30px auto 30px;
